@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border text-base;
+}
+
+.panel.active .setting-title {
+  @apply text-accent-color;
+}
+
+.panel.active .setting-content {
+  @apply opacity-100 transition-opacity duration-0.2s ease-in delay-0.3s;
+}
+
+.panel.active {
+  @apply flex-grow-5;
+}
